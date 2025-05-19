@@ -1,13 +1,11 @@
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/index.dart';
-import 'package:appwrite_authentication_kit_h7mvam/app_state.dart'
-    as appwrite_authentication_kit_h7mvam_app_state;
-import 'package:appwrite_authentication_kit_h7mvam/custom_code/actions/index.dart'
-    as appwrite_authentication_kit_h7mvam_actions;
+import 'package:appwrite_authentication_kit_l1f78z/custom_code/actions/index.dart'
+    as appwrite_authentication_kit_l1f78z_actions;
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'auth_desktop_card_model.dart';
 export 'auth_desktop_card_model.dart';
 
@@ -53,8 +51,6 @@ class _AuthDesktopCardWidgetState extends State<AuthDesktopCardWidget> {
 
   @override
   Widget build(BuildContext context) {
-    context.watch<appwrite_authentication_kit_h7mvam_app_state.FFAppState>();
-
     return Align(
       alignment: AlignmentDirectional(0.0, 0.0),
       child: Column(
@@ -68,9 +64,15 @@ class _AuthDesktopCardWidgetState extends State<AuthDesktopCardWidget> {
               child: Text(
                 'Create account',
                 style: FlutterFlowTheme.of(context).displaySmall.override(
-                      fontFamily: 'Inter Tight',
+                      font: GoogleFonts.interTight(
+                        fontWeight: FontWeight.w500,
+                        fontStyle:
+                            FlutterFlowTheme.of(context).displaySmall.fontStyle,
+                      ),
                       letterSpacing: 0.0,
                       fontWeight: FontWeight.w500,
+                      fontStyle:
+                          FlutterFlowTheme.of(context).displaySmall.fontStyle,
                     ),
               ),
             ),
@@ -117,9 +119,22 @@ class _AuthDesktopCardWidgetState extends State<AuthDesktopCardWidget> {
                           labelText: 'Enter your name',
                           labelStyle:
                               FlutterFlowTheme.of(context).labelMedium.override(
-                                    fontFamily: 'Inter Tight',
+                                    font: GoogleFonts.interTight(
+                                      fontWeight: FlutterFlowTheme.of(context)
+                                          .labelMedium
+                                          .fontWeight,
+                                      fontStyle: FlutterFlowTheme.of(context)
+                                          .labelMedium
+                                          .fontStyle,
+                                    ),
                                     color: Color(0xFF97979B),
                                     letterSpacing: 0.0,
+                                    fontWeight: FlutterFlowTheme.of(context)
+                                        .labelMedium
+                                        .fontWeight,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .labelMedium
+                                        .fontStyle,
                                     lineHeight: 1.4,
                                   ),
                           enabledBorder: OutlineInputBorder(
@@ -131,7 +146,7 @@ class _AuthDesktopCardWidgetState extends State<AuthDesktopCardWidget> {
                           ),
                           focusedBorder: OutlineInputBorder(
                             borderSide: BorderSide(
-                              color: FlutterFlowTheme.of(context).primary,
+                              color: Color(0x66818186),
                               width: 2.0,
                             ),
                             borderRadius: BorderRadius.circular(8.0),
@@ -154,8 +169,21 @@ class _AuthDesktopCardWidgetState extends State<AuthDesktopCardWidget> {
                           fillColor: Color(0xFFFAFAFB),
                         ),
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily: 'Inter',
+                              font: GoogleFonts.inter(
+                                fontWeight: FlutterFlowTheme.of(context)
+                                    .bodyMedium
+                                    .fontWeight,
+                                fontStyle: FlutterFlowTheme.of(context)
+                                    .bodyMedium
+                                    .fontStyle,
+                              ),
                               letterSpacing: 0.4,
+                              fontWeight: FlutterFlowTheme.of(context)
+                                  .bodyMedium
+                                  .fontWeight,
+                              fontStyle: FlutterFlowTheme.of(context)
+                                  .bodyMedium
+                                  .fontStyle,
                             ),
                         maxLines: null,
                         keyboardType: TextInputType.name,
@@ -179,9 +207,22 @@ class _AuthDesktopCardWidgetState extends State<AuthDesktopCardWidget> {
                           labelText: 'Enter email',
                           labelStyle:
                               FlutterFlowTheme.of(context).labelMedium.override(
-                                    fontFamily: 'Inter Tight',
+                                    font: GoogleFonts.interTight(
+                                      fontWeight: FlutterFlowTheme.of(context)
+                                          .labelMedium
+                                          .fontWeight,
+                                      fontStyle: FlutterFlowTheme.of(context)
+                                          .labelMedium
+                                          .fontStyle,
+                                    ),
                                     color: Color(0xFF97979B),
                                     letterSpacing: 0.0,
+                                    fontWeight: FlutterFlowTheme.of(context)
+                                        .labelMedium
+                                        .fontWeight,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .labelMedium
+                                        .fontStyle,
                                     lineHeight: 1.4,
                                   ),
                           enabledBorder: OutlineInputBorder(
@@ -193,7 +234,7 @@ class _AuthDesktopCardWidgetState extends State<AuthDesktopCardWidget> {
                           ),
                           focusedBorder: OutlineInputBorder(
                             borderSide: BorderSide(
-                              color: FlutterFlowTheme.of(context).primary,
+                              color: Color(0x66818186),
                               width: 2.0,
                             ),
                             borderRadius: BorderRadius.circular(8.0),
@@ -216,8 +257,21 @@ class _AuthDesktopCardWidgetState extends State<AuthDesktopCardWidget> {
                           fillColor: Color(0xFFFAFAFB),
                         ),
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily: 'Inter',
+                              font: GoogleFonts.inter(
+                                fontWeight: FlutterFlowTheme.of(context)
+                                    .bodyMedium
+                                    .fontWeight,
+                                fontStyle: FlutterFlowTheme.of(context)
+                                    .bodyMedium
+                                    .fontStyle,
+                              ),
                               letterSpacing: 0.4,
+                              fontWeight: FlutterFlowTheme.of(context)
+                                  .bodyMedium
+                                  .fontWeight,
+                              fontStyle: FlutterFlowTheme.of(context)
+                                  .bodyMedium
+                                  .fontStyle,
                             ),
                         maxLines: null,
                         keyboardType: TextInputType.emailAddress,
@@ -241,9 +295,22 @@ class _AuthDesktopCardWidgetState extends State<AuthDesktopCardWidget> {
                           labelText: 'Enter your password',
                           labelStyle:
                               FlutterFlowTheme.of(context).labelMedium.override(
-                                    fontFamily: 'Inter Tight',
+                                    font: GoogleFonts.interTight(
+                                      fontWeight: FlutterFlowTheme.of(context)
+                                          .labelMedium
+                                          .fontWeight,
+                                      fontStyle: FlutterFlowTheme.of(context)
+                                          .labelMedium
+                                          .fontStyle,
+                                    ),
                                     color: Color(0xFF97979B),
                                     letterSpacing: 0.0,
+                                    fontWeight: FlutterFlowTheme.of(context)
+                                        .labelMedium
+                                        .fontWeight,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .labelMedium
+                                        .fontStyle,
                                     lineHeight: 1.4,
                                   ),
                           enabledBorder: OutlineInputBorder(
@@ -255,7 +322,7 @@ class _AuthDesktopCardWidgetState extends State<AuthDesktopCardWidget> {
                           ),
                           focusedBorder: OutlineInputBorder(
                             borderSide: BorderSide(
-                              color: FlutterFlowTheme.of(context).primary,
+                              color: Color(0x66818186),
                               width: 2.0,
                             ),
                             borderRadius: BorderRadius.circular(8.0),
@@ -292,8 +359,21 @@ class _AuthDesktopCardWidgetState extends State<AuthDesktopCardWidget> {
                           ),
                         ),
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily: 'Inter',
+                              font: GoogleFonts.inter(
+                                fontWeight: FlutterFlowTheme.of(context)
+                                    .bodyMedium
+                                    .fontWeight,
+                                fontStyle: FlutterFlowTheme.of(context)
+                                    .bodyMedium
+                                    .fontStyle,
+                              ),
                               letterSpacing: 0.4,
+                              fontWeight: FlutterFlowTheme.of(context)
+                                  .bodyMedium
+                                  .fontWeight,
+                              fontStyle: FlutterFlowTheme.of(context)
+                                  .bodyMedium
+                                  .fontStyle,
                             ),
                         validator: _model.passwordTextControllerValidator
                             .asValidator(context),
@@ -304,45 +384,32 @@ class _AuthDesktopCardWidgetState extends State<AuthDesktopCardWidget> {
                     padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 2.0),
                     child: FFButtonWidget(
                       onPressed: () async {
-                        var _shouldSetState = false;
-                        _model.signUpResult =
-                            await appwrite_authentication_kit_h7mvam_actions
-                                .signUpWithEmail(
-                          appwrite_authentication_kit_h7mvam_app_state
-                                  .FFAppState()
-                              .appwriteConfig,
+                        _model.signInResult =
+                            await appwrite_authentication_kit_l1f78z_actions
+                                .signUpWithEmailAndPassword(
                           _model.emailAddressTextController.text,
                           _model.passwordTextController.text,
                           _model.nameTextController.text,
                         );
-                        _shouldSetState = true;
-                        if (_model.signUpResult == true) {
-                          context.pushNamed(DashboardWidget.routeName);
-
-                          if (_shouldSetState) safeSetState(() {});
-                          return;
+                        if (_model.signInResult!.success) {
+                          context.pushNamed(WelcomeWidget.routeName);
                         } else {
                           ScaffoldMessenger.of(context).showSnackBar(
                             SnackBar(
                               content: Text(
-                                getJsonField(
-                                  _model.signUpResult,
-                                  r'''$.formattedError''',
-                                ).toString(),
+                                _model.signInResult!.formattedError,
                                 style: TextStyle(
                                   color: Color(0xFF19191C),
                                   fontWeight: FontWeight.w500,
                                 ),
                               ),
-                              duration: Duration(milliseconds: 3900),
+                              duration: Duration(milliseconds: 4000),
                               backgroundColor: Colors.white,
                             ),
                           );
-                          if (_shouldSetState) safeSetState(() {});
-                          return;
                         }
 
-                        if (_shouldSetState) safeSetState(() {});
+                        safeSetState(() {});
                       },
                       text: 'Sign up',
                       options: FFButtonOptions(
@@ -352,14 +419,22 @@ class _AuthDesktopCardWidgetState extends State<AuthDesktopCardWidget> {
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: Color(0x66818186),
+                        color: Color(0xFF19191C),
                         textStyle:
                             FlutterFlowTheme.of(context).titleSmall.override(
-                                  fontFamily: 'Inter Tight',
+                                  font: GoogleFonts.interTight(
+                                    fontWeight: FontWeight.w500,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .titleSmall
+                                        .fontStyle,
+                                  ),
                                   color: Colors.white,
                                   fontSize: 14.0,
                                   letterSpacing: 0.45,
                                   fontWeight: FontWeight.w500,
+                                  fontStyle: FlutterFlowTheme.of(context)
+                                      .titleSmall
+                                      .fontStyle,
                                 ),
                         elevation: 0.0,
                         borderSide: BorderSide(
@@ -367,7 +442,6 @@ class _AuthDesktopCardWidgetState extends State<AuthDesktopCardWidget> {
                           width: 0.0,
                         ),
                         borderRadius: BorderRadius.circular(8.0),
-                        hoverColor: Color(0xFF19191C),
                       ),
                     ),
                   ),

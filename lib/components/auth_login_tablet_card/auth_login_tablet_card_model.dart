@@ -1,4 +1,6 @@
 import '/flutter_flow/flutter_flow_util.dart';
+import "package:appwrite_authentication_kit_l1f78z/backend/schema/structs/index.dart"
+    as appwrite_authentication_kit_l1f78z_data_schema;
 import 'auth_login_tablet_card_widget.dart' show AuthLoginTabletCardWidget;
 import 'package:flutter/material.dart';
 
@@ -16,7 +18,8 @@ class AuthLoginTabletCardModel
   late bool passwordVisibility;
   String? Function(BuildContext, String?)? passwordTextControllerValidator;
   // Stores action output result for [Custom Action - signInWithEmail] action in Button widget.
-  dynamic signInResult;
+  appwrite_authentication_kit_l1f78z_data_schema.AppwriteUserResponseStruct?
+      signInResult;
 
   @override
   void initState(BuildContext context) {

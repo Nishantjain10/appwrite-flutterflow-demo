@@ -27,8 +27,8 @@ dependencies:
     sdk: flutter
   flutter_web_plugins:
     sdk: flutter
-  appwrite_authentication_kit_h7mvam:
-    path: ./dependencies/appwrite_authentication_kit_h7mvam # 0.0.4
+  appwrite_authentication_kit_l1f78z:
+    path: ./dependencies/appwrite_authentication_kit_l1f78z # 0.0.4
   auto_size_text: 3.0.0
   cached_network_image: 3.4.1
   cached_network_image_platform_interface: 4.1.1
@@ -80,7 +80,6 @@ dependencies:
 dependency_overrides:
   http: 1.2.2
   uuid: ^4.0.0
-  collection: ^1.18.0
 
 dev_dependencies:
   flutter_lints: 4.0.0
@@ -108,15 +107,7 @@ flutter:
     - assets/rive_animations/
     - assets/pdfs/
     - assets/jsons/
-    - dependencies/appwrite_authentication_kit_h7mvam/assets/fonts/
-    - dependencies/appwrite_authentication_kit_h7mvam/assets/images/
-    - dependencies/appwrite_authentication_kit_h7mvam/assets/videos/
-    - dependencies/appwrite_authentication_kit_h7mvam/assets/audios/
-    - dependencies/appwrite_authentication_kit_h7mvam/assets/rive_animations/
-    - dependencies/appwrite_authentication_kit_h7mvam/assets/pdfs/
-    - dependencies/appwrite_authentication_kit_h7mvam/assets/jsons/
 
-    - assets/environment_values/
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

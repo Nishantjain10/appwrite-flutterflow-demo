@@ -1,4 +1,4 @@
-# appwrite-auth
+# Appwrite - Auth
 
 A new Flutter project.
 

@@ -1,13 +1,11 @@
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/index.dart';
-import 'package:appwrite_authentication_kit_h7mvam/app_state.dart'
-    as appwrite_authentication_kit_h7mvam_app_state;
-import 'package:appwrite_authentication_kit_h7mvam/custom_code/actions/index.dart'
-    as appwrite_authentication_kit_h7mvam_actions;
+import 'package:appwrite_authentication_kit_l1f78z/custom_code/actions/index.dart'
+    as appwrite_authentication_kit_l1f78z_actions;
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'auth_login_tablet_card_model.dart';
 export 'auth_login_tablet_card_model.dart';
 
@@ -51,8 +49,6 @@ class _AuthLoginTabletCardWidgetState extends State<AuthLoginTabletCardWidget> {
 
   @override
   Widget build(BuildContext context) {
-    context.watch<appwrite_authentication_kit_h7mvam_app_state.FFAppState>();
-
     return Align(
       alignment: AlignmentDirectional(0.0, 0.0),
       child: Padding(
@@ -67,9 +63,15 @@ class _AuthLoginTabletCardWidgetState extends State<AuthLoginTabletCardWidget> {
               child: Text(
                 'Welcome back',
                 style: FlutterFlowTheme.of(context).displaySmall.override(
-                      fontFamily: 'Inter Tight',
+                      font: GoogleFonts.interTight(
+                        fontWeight: FontWeight.w500,
+                        fontStyle:
+                            FlutterFlowTheme.of(context).displaySmall.fontStyle,
+                      ),
                       letterSpacing: 0.0,
                       fontWeight: FontWeight.w500,
+                      fontStyle:
+                          FlutterFlowTheme.of(context).displaySmall.fontStyle,
                     ),
               ),
             ),
@@ -112,9 +114,22 @@ class _AuthLoginTabletCardWidgetState extends State<AuthLoginTabletCardWidget> {
                           labelText: 'Enter email',
                           labelStyle:
                               FlutterFlowTheme.of(context).labelMedium.override(
-                                    fontFamily: 'Inter Tight',
+                                    font: GoogleFonts.interTight(
+                                      fontWeight: FlutterFlowTheme.of(context)
+                                          .labelMedium
+                                          .fontWeight,
+                                      fontStyle: FlutterFlowTheme.of(context)
+                                          .labelMedium
+                                          .fontStyle,
+                                    ),
                                     color: Color(0xFF97979B),
                                     letterSpacing: 0.0,
+                                    fontWeight: FlutterFlowTheme.of(context)
+                                        .labelMedium
+                                        .fontWeight,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .labelMedium
+                                        .fontStyle,
                                     lineHeight: 1.4,
                                   ),
                           enabledBorder: OutlineInputBorder(
@@ -126,7 +141,7 @@ class _AuthLoginTabletCardWidgetState extends State<AuthLoginTabletCardWidget> {
                           ),
                           focusedBorder: OutlineInputBorder(
                             borderSide: BorderSide(
-                              color: FlutterFlowTheme.of(context).primary,
+                              color: Color(0x66818186),
                               width: 2.0,
                             ),
                             borderRadius: BorderRadius.circular(8.0),
@@ -149,8 +164,21 @@ class _AuthLoginTabletCardWidgetState extends State<AuthLoginTabletCardWidget> {
                           fillColor: Color(0xFFFAFAFB),
                         ),
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily: 'Inter',
+                              font: GoogleFonts.inter(
+                                fontWeight: FlutterFlowTheme.of(context)
+                                    .bodyMedium
+                                    .fontWeight,
+                                fontStyle: FlutterFlowTheme.of(context)
+                                    .bodyMedium
+                                    .fontStyle,
+                              ),
                               letterSpacing: 0.4,
+                              fontWeight: FlutterFlowTheme.of(context)
+                                  .bodyMedium
+                                  .fontWeight,
+                              fontStyle: FlutterFlowTheme.of(context)
+                                  .bodyMedium
+                                  .fontStyle,
                             ),
                         maxLines: null,
                         keyboardType: TextInputType.emailAddress,
@@ -174,9 +202,22 @@ class _AuthLoginTabletCardWidgetState extends State<AuthLoginTabletCardWidget> {
                           labelText: 'Enter your password',
                           labelStyle:
                               FlutterFlowTheme.of(context).labelMedium.override(
-                                    fontFamily: 'Inter Tight',
+                                    font: GoogleFonts.interTight(
+                                      fontWeight: FlutterFlowTheme.of(context)
+                                          .labelMedium
+                                          .fontWeight,
+                                      fontStyle: FlutterFlowTheme.of(context)
+                                          .labelMedium
+                                          .fontStyle,
+                                    ),
                                     color: Color(0xFF97979B),
                                     letterSpacing: 0.0,
+                                    fontWeight: FlutterFlowTheme.of(context)
+                                        .labelMedium
+                                        .fontWeight,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .labelMedium
+                                        .fontStyle,
                                     lineHeight: 1.4,
                                   ),
                           enabledBorder: OutlineInputBorder(
@@ -188,7 +229,7 @@ class _AuthLoginTabletCardWidgetState extends State<AuthLoginTabletCardWidget> {
                           ),
                           focusedBorder: OutlineInputBorder(
                             borderSide: BorderSide(
-                              color: FlutterFlowTheme.of(context).primary,
+                              color: Color(0x66818186),
                               width: 2.0,
                             ),
                             borderRadius: BorderRadius.circular(8.0),
@@ -225,8 +266,21 @@ class _AuthLoginTabletCardWidgetState extends State<AuthLoginTabletCardWidget> {
                           ),
                         ),
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily: 'Inter',
+                              font: GoogleFonts.inter(
+                                fontWeight: FlutterFlowTheme.of(context)
+                                    .bodyMedium
+                                    .fontWeight,
+                                fontStyle: FlutterFlowTheme.of(context)
+                                    .bodyMedium
+                                    .fontStyle,
+                              ),
                               letterSpacing: 0.4,
+                              fontWeight: FlutterFlowTheme.of(context)
+                                  .bodyMedium
+                                  .fontWeight,
+                              fontStyle: FlutterFlowTheme.of(context)
+                                  .bodyMedium
+                                  .fontStyle,
                             ),
                         validator: _model.passwordTextControllerValidator
                             .asValidator(context),
@@ -237,30 +291,19 @@ class _AuthLoginTabletCardWidgetState extends State<AuthLoginTabletCardWidget> {
                     padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 2.0),
                     child: FFButtonWidget(
                       onPressed: () async {
-                        var _shouldSetState = false;
                         _model.signInResult =
-                            await appwrite_authentication_kit_h7mvam_actions
+                            await appwrite_authentication_kit_l1f78z_actions
                                 .signInWithEmail(
-                          appwrite_authentication_kit_h7mvam_app_state
-                                  .FFAppState()
-                              .appwriteConfig,
                           _model.emailAddressTextController.text,
                           _model.passwordTextController.text,
                         );
-                        _shouldSetState = true;
-                        if (_model.signInResult == true) {
+                        if (_model.signInResult!.success) {
                           context.pushNamed(DashboardWidget.routeName);
-
-                          if (_shouldSetState) safeSetState(() {});
-                          return;
                         } else {
                           ScaffoldMessenger.of(context).showSnackBar(
                             SnackBar(
                               content: Text(
-                                getJsonField(
-                                  _model.signInResult,
-                                  r'''$.formattedError''',
-                                ).toString(),
+                                _model.signInResult!.formattedError,
                                 style: TextStyle(
                                   color: Color(0xFF19191C),
                                   fontWeight: FontWeight.w500,
@@ -270,11 +313,9 @@ class _AuthLoginTabletCardWidgetState extends State<AuthLoginTabletCardWidget> {
                               backgroundColor: Colors.white,
                             ),
                           );
-                          if (_shouldSetState) safeSetState(() {});
-                          return;
                         }
 
-                        if (_shouldSetState) safeSetState(() {});
+                        safeSetState(() {});
                       },
                       text: 'Sign in',
                       options: FFButtonOptions(
@@ -284,14 +325,22 @@ class _AuthLoginTabletCardWidgetState extends State<AuthLoginTabletCardWidget> {
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         iconPadding:
                             EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: Color(0x66818186),
+                        color: Color(0xFF19191C),
                         textStyle:
                             FlutterFlowTheme.of(context).titleSmall.override(
-                                  fontFamily: 'Inter Tight',
+                                  font: GoogleFonts.interTight(
+                                    fontWeight: FontWeight.w500,
+                                    fontStyle: FlutterFlowTheme.of(context)
+                                        .titleSmall
+                                        .fontStyle,
+                                  ),
                                   color: Colors.white,
                                   fontSize: 14.0,
                                   letterSpacing: 0.45,
                                   fontWeight: FontWeight.w500,
+                                  fontStyle: FlutterFlowTheme.of(context)
+                                      .titleSmall
+                                      .fontStyle,
                                 ),
                         elevation: 0.0,
                         borderSide: BorderSide(
@@ -299,7 +348,6 @@ class _AuthLoginTabletCardWidgetState extends State<AuthLoginTabletCardWidget> {
                           width: 0.0,
                         ),
                         borderRadius: BorderRadius.circular(8.0),
-                        hoverColor: Color(0xFF19191C),
                       ),
                     ),
                   ),

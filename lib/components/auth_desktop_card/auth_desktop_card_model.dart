@@ -1,4 +1,6 @@
 import '/flutter_flow/flutter_flow_util.dart';
+import "package:appwrite_authentication_kit_l1f78z/backend/schema/structs/index.dart"
+    as appwrite_authentication_kit_l1f78z_data_schema;
 import 'auth_desktop_card_widget.dart' show AuthDesktopCardWidget;
 import 'package:flutter/material.dart';
 
@@ -18,8 +20,9 @@ class AuthDesktopCardModel extends FlutterFlowModel<AuthDesktopCardWidget> {
   TextEditingController? passwordTextController;
   late bool passwordVisibility;
   String? Function(BuildContext, String?)? passwordTextControllerValidator;
-  // Stores action output result for [Custom Action - signUpWithEmail] action in Button widget.
-  dynamic signUpResult;
+  // Stores action output result for [Custom Action - signUpWithEmailAndPassword] action in Button widget.
+  appwrite_authentication_kit_l1f78z_data_schema.AppwriteUserResponseStruct?
+      signInResult;
 
   @override
   void initState(BuildContext context) {

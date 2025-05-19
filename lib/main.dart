@@ -1,29 +1,35 @@
 import 'package:provider/provider.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
 import 'flutter_flow/flutter_flow_util.dart';
 
-import 'package:appwrite_authentication_kit_h7mvam/app_state.dart'
-    as appwrite_authentication_kit_h7mvam_app_state;
+import 'package:appwrite_authentication_kit_l1f78z/app_state.dart'
+    as appwrite_authentication_kit_l1f78z_app_state;
+
+import 'package:appwrite_authentication_kit_l1f78z/library_values.dart'
+    as appwrite_authentication_kit_l1f78z_library_values;
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   GoRouter.optionURLReflectsImperativeAPIs = true;
   usePathUrlStrategy();
 
-  final environmentValues = FFDevEnvironmentValues();
-  await environmentValues.initialize();
+  appwrite_authentication_kit_l1f78z_library_values.FFLibraryValues()
+      .appwriteEndpoint = 'https://cloud.appwrite.io/v1';
+  appwrite_authentication_kit_l1f78z_library_values.FFLibraryValues()
+      .appwriteProjectId = 'Appwrite_Project_ID';
 
-  final appwrite_authentication_kit_h7mvamAppState =
-      appwrite_authentication_kit_h7mvam_app_state.FFAppState();
-  await appwrite_authentication_kit_h7mvamAppState.initializePersistedState();
+  final appwrite_authentication_kit_l1f78zAppState =
+      appwrite_authentication_kit_l1f78z_app_state.FFAppState();
+  await appwrite_authentication_kit_l1f78zAppState.initializePersistedState();
 
   runApp(MultiProvider(
     providers: [
       ChangeNotifierProvider(
-        create: (context) => appwrite_authentication_kit_h7mvamAppState,
+        create: (context) => appwrite_authentication_kit_l1f78zAppState,
       ),
     ],
     child: MyApp(),
@@ -37,6 +43,14 @@ class MyApp extends StatefulWidget {
 
   static _MyAppState of(BuildContext context) =>
       context.findAncestorStateOfType<_MyAppState>()!;
+}
+
+class MyAppScrollBehavior extends MaterialScrollBehavior {
+  @override
+  Set<PointerDeviceKind> get dragDevices => {
+        PointerDeviceKind.touch,
+        PointerDeviceKind.mouse,
+      };
 }
 
 class _MyAppState extends State<MyApp> {
@@ -74,7 +88,8 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
-      title: 'appwrite-auth',
+      title: 'Appwrite - Auth',
+      scrollBehavior: MyAppScrollBehavior(),
       localizationsDelegates: [
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,

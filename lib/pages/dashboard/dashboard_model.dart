@@ -8,8 +8,6 @@ import 'package:flutter/material.dart';
 class DashboardModel extends FlutterFlowModel<DashboardWidget> {
   ///  State fields for stateful widgets in this page.
 
-  // Stores action output result for [Custom Action - getCurrentUser] action in Dashboard widget.
-  dynamic userResult;
   // Model for btnSignOutMobile component.
   late BtnSignOutMobileModel btnSignOutMobileModel;
   // Model for btnSignOutTablet component.

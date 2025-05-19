@@ -1,13 +1,11 @@
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/index.dart';
-import 'package:appwrite_authentication_kit_h7mvam/app_state.dart'
-    as appwrite_authentication_kit_h7mvam_app_state;
-import 'package:appwrite_authentication_kit_h7mvam/custom_code/actions/index.dart'
-    as appwrite_authentication_kit_h7mvam_actions;
+import 'package:appwrite_authentication_kit_l1f78z/custom_code/actions/index.dart'
+    as appwrite_authentication_kit_l1f78z_actions;
 import 'package:ff_theme/flutter_flow/flutter_flow_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'btn_sign_out_desktop_model.dart';
 export 'btn_sign_out_desktop_model.dart';
 
@@ -45,34 +43,21 @@ class _BtnSignOutDesktopWidgetState extends State<BtnSignOutDesktopWidget> {
 
   @override
   Widget build(BuildContext context) {
-    context.watch<appwrite_authentication_kit_h7mvam_app_state.FFAppState>();
-
     return Align(
       alignment: AlignmentDirectional(1.0, 0.0),
       child: Padding(
         padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 0.0),
         child: FFButtonWidget(
           onPressed: () async {
-            var _shouldSetState = false;
             _model.signOutResult =
-                await appwrite_authentication_kit_h7mvam_actions.signOut(
-              appwrite_authentication_kit_h7mvam_app_state.FFAppState()
-                  .appwriteConfig,
-            );
-            _shouldSetState = true;
-            if (_model.signOutResult == true) {
+                await appwrite_authentication_kit_l1f78z_actions.signOut();
+            if (_model.signOutResult!.success) {
               context.pushNamed(WelcomeWidget.routeName);
-
-              if (_shouldSetState) safeSetState(() {});
-              return;
             } else {
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
                   content: Text(
-                    getJsonField(
-                      _model.signOutResult,
-                      r'''$.formattedError''',
-                    ).toString(),
+                    _model.signOutResult!.formattedError,
                     style: TextStyle(
                       color: Color(0xFF19191C),
                       fontWeight: FontWeight.w500,
@@ -82,11 +67,9 @@ class _BtnSignOutDesktopWidgetState extends State<BtnSignOutDesktopWidget> {
                   backgroundColor: Colors.white,
                 ),
               );
-              if (_shouldSetState) safeSetState(() {});
-              return;
             }
 
-            if (_shouldSetState) safeSetState(() {});
+            safeSetState(() {});
           },
           text: 'Sign out',
           options: FFButtonOptions(
@@ -96,11 +79,16 @@ class _BtnSignOutDesktopWidgetState extends State<BtnSignOutDesktopWidget> {
             iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
             color: Colors.white,
             textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                  fontFamily: 'Inter Tight',
+                  font: GoogleFonts.interTight(
+                    fontWeight: FontWeight.w600,
+                    fontStyle:
+                        FlutterFlowTheme.of(context).titleSmall.fontStyle,
+                  ),
                   color: Color(0xFF56565C),
                   fontSize: 14.0,
                   letterSpacing: 0.0,
                   fontWeight: FontWeight.w600,
+                  fontStyle: FlutterFlowTheme.of(context).titleSmall.fontStyle,
                 ),
             elevation: 0.0,
             borderSide: BorderSide(

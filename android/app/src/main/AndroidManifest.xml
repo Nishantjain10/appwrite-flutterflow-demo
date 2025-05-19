@@ -5,7 +5,7 @@
 
 
     <application
-        android:label="appwrite-auth"
+        android:label="Appwrite - Auth"
         tools:replace="android:label"
         android:icon="@mipmap/ic_launcher"
         android:requestLegacyExternalStorage="true">
@@ -55,6 +55,7 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+
 
 
 
